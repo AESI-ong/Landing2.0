@@ -1,24 +1,43 @@
-import { APITester } from "./APITester";
-import "./index.css";
-
-import logo from "./logo.svg";
-import reactLogo from "./react.svg";
+import { useState } from 'react'
+import { Navbar } from './components/common/navigation/Navbar'
+import { Footer } from './components/common/navigation/Footer'
+import { Bienvenidos } from './components/pages/Bienvenidos'
+import { QuienesSomos } from './components/pages/QuienesSomos'
+import { Programas } from './components/pages/Programas'
+import { Aliados } from './components/pages/Aliados'
+import { Contacto } from './components/pages/Contacto'
+import { Donaciones } from './components/pages/Donaciones'
+import './index.css'
 
 export function App() {
-  return (
-    <div className="app">
-      <div className="logo-container">
-        <img src={logo} alt="Bun Logo" className="logo bun-logo" />
-        <img src={reactLogo} alt="React Logo" className="logo react-logo" />
-      </div>
+	const [currentPage, setCurrentPage] = useState('bienvenidos')
 
-      <h1>Bun + React</h1>
-      <p>
-        Edit <code>src/App.tsx</code> and save to test HMR
-      </p>
-      <APITester />
-    </div>
-  );
+	const renderPage = () => {
+		switch (currentPage) {
+			case 'bienvenidos':
+				return <Bienvenidos />
+			case 'quienes-somos':
+				return <QuienesSomos />
+			case 'programas':
+				return <Programas />
+			case 'aliados':
+				return <Aliados />
+			case 'contacto':
+				return <Contacto />
+			case 'donaciones':
+				return <Donaciones />
+			default:
+				return <Bienvenidos />
+		}
+	}
+
+	return (
+		<div className="app">
+			<Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
+			{renderPage()}
+			<Footer />
+		</div>
+	)
 }
 
-export default App;
+export default App
