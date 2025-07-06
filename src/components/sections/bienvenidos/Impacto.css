@@ -1,0 +1,82 @@
+/* === Sección principal === */
+.impacto-section {
+  padding: 4rem 1rem;
+  background-color: #f9fafb;
+}
+
+.impacto-container {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* === Encabezado === */
+.impacto-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.impacto-header h2 {
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.impacto-subrayado {
+  width: 12rem;
+  height: 6px;
+  background-image: linear-gradient(to right, #1d4ed8, #93c5fd);
+  margin: 0 auto 1.5rem;
+  border-radius: 1rem;
+}
+
+.impacto-header p {
+  color: #4b5563;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* === Grid adaptable === */
+.impacto-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+/* === Tarjetas de impacto === */
+.impacto-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.impacto-card.hovered {
+  transform: scale(1.05);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Ícono */
+.icon-box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Número */
+.impacto-numero {
+  margin-bottom: 0.75rem;
+  transition: color 0.3s ease;
+  font-weight: bold;         
+  font-size: 1.9rem;         
+}
+
+/* Descripción */
+.impacto-texto {
+  color: #4b5563;
+}
