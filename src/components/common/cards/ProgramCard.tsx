@@ -1,9 +1,10 @@
 import { CategoryBadge } from '../badges/CategoryBadge'
 import { GradientButton } from '../buttons/GradientButton'
+import { Heart, Users, Briefcase, Home, TrendingUp, Building } from 'lucide-react'
 import './ProgramCard.css'
 
 interface Metric {
-	icon: string // Path to SVG icon
+	icon: string // Icon name for Lucide React
 	value: string
 	label: string
 }
@@ -21,6 +22,20 @@ interface ProgramCardProps {
 	className?: string
 }
 
+const categoryIcons = {
+	salud: Heart,
+	desarrollo: TrendingUp,
+	vivienda: Home
+}
+
+const metricIcons = {
+	people: Users,
+	business: Briefcase,
+	house: Home,
+	users: Users,
+	building: Building
+}
+
 export function ProgramCard({
 	title,
 	description,
@@ -33,32 +48,20 @@ export function ProgramCard({
 	onViewDetails,
 	className = ''
 }: ProgramCardProps) {
+	const CategoryIcon = categoryIcons[category]
+	
 	return (
 		<div className={`program-card ${className}`}>
 			<div className="program-card__image-container">
 				<CategoryBadge category={category}>
-					{/* TODO: Add category icon SVG here */}
 					<span className="category-badge__icon">
-						<img 
-							src={`/src/assets/icons/category/${category}.svg`} 
-							alt="" 
-							width="16" 
-							height="16"
-						/>
+						<CategoryIcon size={16} />
 					</span>
 					{categoryLabel}
 				</CategoryBadge>
 				
 				<div className="program-card__image">
 					<img src={imageUrl} alt={imageAlt} />
-					{/* TODO: Add main program icon/illustration here */}
-					<div className="program-card__image-placeholder">
-						<img 
-							src={`/src/assets/icons/programs/${category}-main.svg`} 
-							alt="" 
-							className="program-card__main-icon"
-						/>
-					</div>
 				</div>
 				
 				<div className="program-card__statistic">
@@ -71,19 +74,19 @@ export function ProgramCard({
 				<p className="program-card__description">{description}</p>
 				
 				<div className="program-card__metrics">
-					{metrics.map((metric, index) => (
-						<div key={index} className="program-card__metric">
-							<img 
-								src={metric.icon} 
-								alt="" 
-								className="program-card__metric-icon"
-								width="16" 
-								height="16"
-							/>
-							<span className="program-card__metric-value">{metric.value}</span>
-							<span className="program-card__metric-label">{metric.label}</span>
-						</div>
-					))}
+					{metrics.map((metric, index) => {
+						const MetricIcon = metricIcons[metric.icon as keyof typeof metricIcons] || Users
+						return (
+							<div key={index} className="program-card__metric">
+								<MetricIcon 
+									size={16} 
+									className="program-card__metric-icon"
+								/>
+								<span className="program-card__metric-value">{metric.value}</span>
+								<span className="program-card__metric-label">{metric.label}</span>
+							</div>
+						)
+					})}
 				</div>
 				
 				<button 

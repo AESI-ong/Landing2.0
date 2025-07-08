@@ -8,7 +8,7 @@ export interface ProgramData {
 	imageAlt: string
 	statisticOverlay: string
 	metrics: Array<{
-		icon: string
+		icon: string // Lucide React icon name
 		value: string
 		label: string
 	}>
@@ -26,12 +26,12 @@ export const programsData: ProgramData[] = [
 		statisticOverlay: '800 familias',
 		metrics: [
 			{
-				icon: '/src/assets/icons/metrics/people.svg',
+				icon: 'people',
 				value: '800',
 				label: 'familias'
 			},
 			{
-				icon: '/src/assets/icons/metrics/health-center.svg',
+				icon: 'building',
 				value: '5',
 				label: 'centros de salud'
 			}
@@ -48,12 +48,12 @@ export const programsData: ProgramData[] = [
 		statisticOverlay: '300 emprendedores',
 		metrics: [
 			{
-				icon: '/src/assets/icons/metrics/people.svg',
+				icon: 'people',
 				value: '300',
 				label: 'emprendedores'
 			},
 			{
-				icon: '/src/assets/icons/metrics/business.svg',
+				icon: 'business',
 				value: '150',
 				label: 'negocios creados'
 			}
@@ -70,12 +70,12 @@ export const programsData: ProgramData[] = [
 		statisticOverlay: '200 familias',
 		metrics: [
 			{
-				icon: '/src/assets/icons/metrics/people.svg',
+				icon: 'people',
 				value: '200',
 				label: 'familias'
 			},
 			{
-				icon: '/src/assets/icons/metrics/house.svg',
+				icon: 'house',
 				value: '85',
 				label: 'casas construidas'
 			}
