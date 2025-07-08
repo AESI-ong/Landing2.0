@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap');
+
 :root {
-	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-family: 'M PLUS Rounded 1c', Arial, sans-serif;
 	line-height: 1.5;
 	color-scheme: light dark;
 	color: rgba(255, 255, 255, 0.87);
@@ -31,63 +33,117 @@ body {
 }
 
 .container {
-  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
 
 /* Navbar Styles */
 .navbar {
-  background-color: #ffffff;
+  background-color: white;
   position: sticky;
   top: 0;
   z-index: 100;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
 }
 
 .navbar-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 4.5rem;
 }
 
-.navbar-brand h2 {
-  color: #fbf0df;
-  font-weight: 700;
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px;
+  width: auto;
 }
 
 .navbar-nav {
   display: flex;
   list-style: none;
-  gap: 1rem;
+  gap: 3rem;
+  align-items: center;
 }
 
 .nav-link {
   background: none;
   border: none;
-  color: rgba(255, 255, 255, 0.87);
-  padding: 0.5rem 1rem;
+  color: #374151;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
   cursor: pointer;
-  border-radius: 0.5rem;
-  transition: background-color 0.2s;
+  transition: color 0.3s;
+  white-space: nowrap;
 }
 
 .nav-link:hover {
-  background-color: rgba(251, 240, 223, 0.1);
+  color: var(--azul-aesi);
 }
 
 .nav-link.active {
-  background-color: #fbf0df;
-  color: #1a1a1a;
+  color: var(--azul-aesi);
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: var(--azul-aesi);
+}
+
+.navbar-cta {
+  display: flex;
+  align-items: center;
+}
+
+.donaciones-btn {
+  background: linear-gradient(135deg, var(--rojo-aesi) 0%, #E53935 100%);
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  box-shadow: 0 2px 4px rgba(205, 32, 39, 0.2);
+}
+
+.donaciones-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(205, 32, 39, 0.3);
+}
+
+.donaciones-btn.active {
+  background: linear-gradient(135deg, #B71C1C 0%, var(--rojo-aesi) 100%);
+}
+
+.heart-icon {
+  font-size: 1.1rem;
+  color: white;
 }
 
 /* Page Styles */
 .page {
   flex: 1;
-  padding: 2rem 0;
 }
 
 .hero-section {
@@ -239,17 +295,32 @@ section p {
 
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+	.navbar-nav {
+		gap: 2rem;
+	}
+	
+	.nav-link {
+		font-size: 0.9rem;
+	}
+}
+
 @media (max-width: 768px) {
 	.navbar-container {
-		flex-direction: column;
-		height: auto;
-		padding: 1rem;
+		padding: 0 1rem;
 	}
 	
 	.navbar-nav {
-		flex-wrap: wrap;
-		justify-content: center;
-		margin-top: 1rem;
+		gap: 1rem;
+	}
+	
+	.nav-link {
+		font-size: 0.85rem;
+	}
+	
+	.donaciones-btn {
+		padding: 0.6rem 1.2rem;
+		font-size: 0.9rem;
 	}
 	
 	.hero-section h1 {

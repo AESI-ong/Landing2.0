@@ -17,7 +17,10 @@ export function Carousel({
 	itemsPerView = 3 
 }: CarouselProps) {
 	const [currentIndex, setCurrentIndex] = useState(0)
-	const totalSlides = Math.ceil(children.length / itemsPerView)
+	
+	// For single item view, each child is a slide. For multiple items, group them.
+	const isSingleItemView = itemsPerView === 1
+	const totalSlides = isSingleItemView ? children.length : Math.ceil(children.length / itemsPerView)
 
 	const goToNext = () => {
 		setCurrentIndex((prev) => (prev + 1) % totalSlides)
@@ -59,20 +62,34 @@ export function Carousel({
 						width: `${totalSlides * 100}%`
 					}}
 				>
-					{Array.from({ length: totalSlides }).map((_, slideIndex) => (
-						<div 
-							key={slideIndex} 
-							className="carousel__slide"
-							style={{ width: `${100 / totalSlides}%` }}
-						>
-							<div className="carousel__slide-content">
-								{children.slice(
-									slideIndex * itemsPerView, 
-									(slideIndex + 1) * itemsPerView
-								)}
+					{isSingleItemView ? (
+						// For single item view, render each child as a full slide
+						children.map((child, index) => (
+							<div 
+								key={index} 
+								className="carousel__slide"
+								style={{ width: `${100 / totalSlides}%` }}
+							>
+								{child}
 							</div>
-						</div>
-					))}
+						))
+					) : (
+						// For multiple items view, group items into slides
+						Array.from({ length: totalSlides }).map((_, slideIndex) => (
+							<div 
+								key={slideIndex} 
+								className="carousel__slide"
+								style={{ width: `${100 / totalSlides}%` }}
+							>
+								<div className="carousel__slide-content">
+									{children.slice(
+										slideIndex * itemsPerView, 
+										(slideIndex + 1) * itemsPerView
+									)}
+								</div>
+							</div>
+						))
+					)}
 				</div>
 			</div>
 
