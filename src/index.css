@@ -1,9 +1,15 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1.5;
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #ffffff;
+	
+	/* AESI Brand Colors */
+	--amarillo-aesi: #F6D70E;
+	--rojo-aesi: #CD2027;
+	--azul-aesi: #2C6DB6;
+	--verde-aesi: #55B948;
 }
 
 * {
@@ -32,8 +38,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
-  background-color: #1a1a1a;
-  border-bottom: 1px solid #333;
+  background-color: #ffffff;
   position: sticky;
   top: 0;
   z-index: 100;
@@ -88,7 +93,7 @@ body {
 .hero-section {
   text-align: center;
   padding: 4rem 0;
-  background: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+  background: #ffffff;
 }
 
 .hero-section h1 {
@@ -122,19 +127,19 @@ section p {
 }
 
 .impacto-section {
-  background-color: #1a1a1a;
+  background-color: #ffffff;
 }
 
 .programas-section {
-  background-color: #2a2a2a;
+  background-color: #ffffff;
 }
 
 /* Card Styles */
 .photo-card {
   background-color: #1a1a1a;
-  border-radius: 0.5rem;
+  border-radius: 0.5rem;  
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 6px rgb(255, 255, 255);
 }
 
 .photo-card-image img {
@@ -180,7 +185,7 @@ section p {
 
 /* Footer Styles */
 .footer {
-  background-color: #0a0a0a;
+  background-color: #ffffff;
   padding: 3rem 0 1rem;
   margin-top: auto;
 }
@@ -229,25 +234,29 @@ section p {
   color: rgba(255, 255, 255, 0.6);
 }
 
+
+
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
-  .navbar-container {
-    flex-direction: column;
-    height: auto;
-    padding: 1rem;
-  }
-  
-  .navbar-nav {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 1rem;
-  }
-  
-  .hero-section h1 {
-    font-size: 2rem;
-  }
-  
-  section h2 {
-    font-size: 2rem;
-  }
+	.navbar-container {
+		flex-direction: column;
+		height: auto;
+		padding: 1rem;
+	}
+	
+	.navbar-nav {
+		flex-wrap: wrap;
+		justify-content: center;
+		margin-top: 1rem;
+	}
+	
+	.hero-section h1 {
+		font-size: 2rem;
+	}
+	
+	section h2 {
+		font-size: 2rem;
+	}
 }
