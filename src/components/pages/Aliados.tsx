@@ -3,7 +3,7 @@ export function Aliados() {
 		<main className="page">
 			<div className="container">
 				<h1>Aliados</h1>
-				<p>Placeholder para contenido de aliados</p>
+				<p>Placeholder para lista de aliados</p>
 			</div>
 		</main>
 	)

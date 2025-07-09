@@ -1,7 +1,10 @@
 import { HeroSection } from '../sections/bienvenidos/HeroSection'
 import { ImpactoSection } from '../sections/bienvenidos/ImpactoSection'
 import { ProgramasSection } from '../sections/bienvenidos/ProgramasSection'
+import {DonacionesSection} from '../sections/bienvenidos/DonacionesSection'
+import {LideresSection} from '../sections/bienvenidos/LideresSection'
 import { PodcastSection } from '../sections/bienvenidos/PodcastSection'
+import {AliadosSection} from '../sections/bienvenidos/AliadosSection'
 
 export function Bienvenidos() {
 	const handleHeroCta = (action: string) => {
@@ -24,7 +27,10 @@ export function Bienvenidos() {
 			<HeroSection onCtaClick={handleHeroCta} />
 			<ImpactoSection />
 			<ProgramasSection />
+			<DonacionesSection />
+			<LideresSection />
 			<PodcastSection />
+			<AliadosSection />
 		</main>
 	)
 } 
