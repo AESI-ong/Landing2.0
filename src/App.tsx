@@ -18,11 +18,11 @@ export function App() {
 				return <Bienvenidos />
 			case 'quienes-somos':
 				return <QuienesSomos />
-			case 'programas':
+			case 'que-hacemos':
 				return <Programas />
-			case 'aliados':
+			case 'bolsa-laboral':
 				return <Aliados />
-			case 'contacto':
+			case 'mercado-inclusivo':
 				return <Contacto />
 			case 'donaciones':
 				return <Donaciones />

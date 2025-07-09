@@ -1,4 +1,7 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Health Cross Icon -->
-  <path d="M8 2V14M2 8H14" stroke="white" strokeWidth="2" strokeLinecap="round"/>
-</svg> 
+<svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.9805 2V4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.98047 2V4" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.98047 3H4.98047C4.45004 3 3.94133 3.21071 3.56626 3.58579C3.19118 3.96086 2.98047 4.46957 2.98047 5V9C2.98047 10.5913 3.61261 12.1174 4.73783 13.2426C5.86305 14.3679 7.38917 15 8.98047 15C10.5718 15 12.0979 14.3679 13.2231 13.2426C14.3483 12.1174 14.9805 10.5913 14.9805 9V5C14.9805 4.46957 14.7698 3.96086 14.3947 3.58579C14.0196 3.21071 13.5109 3 12.9805 3H11.9805" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.98047 15C8.98047 16.5913 9.61261 18.1174 10.7378 19.2426C11.863 20.3679 13.3892 21 14.9805 21C16.5718 21 18.0979 20.3679 19.2231 19.2426C20.3483 18.1174 20.9805 16.5913 20.9805 15V12" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.9805 12C22.085 12 22.9805 11.1046 22.9805 10C22.9805 8.89543 22.085 8 20.9805 8C19.8759 8 18.9805 8.89543 18.9805 10C18.9805 11.1046 19.8759 12 20.9805 12Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

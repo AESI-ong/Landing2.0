@@ -1,25 +1,24 @@
-
-
 interface NavbarProps {
 	currentPage: string
 	onNavigate: (page: string) => void
 }
 
+import { Logo } from '../Logo'
+
 export function Navbar({ currentPage, onNavigate }: NavbarProps) {
 	const navItems = [
 		{ key: 'bienvenidos', label: 'Bienvenidos' },
-		{ key: 'quienes-somos', label: 'Quienes Somos?' },
-		{ key: 'programas', label: 'Programas' },
-		{ key: 'aliados', label: 'Aliados' },
-		{ key: 'contacto', label: 'Contacto' },
-		{ key: 'donaciones', label: 'Donaciones' },
+		{ key: 'quienes-somos', label: '¿Quiénes somos?' },
+		{ key: 'que-hacemos', label: '¿Qué hacemos?' },
+		{ key: 'bolsa-laboral', label: 'Bolsa Laboral Inclusiva' },
+		{ key: 'mercado-inclusivo', label: 'Mercado Inclusivo' },
 	]
 
 	return (
 		<nav className="navbar">
 			<div className="navbar-container">
 				<div className="navbar-brand">
-					<h2>AESI</h2>
+					<Logo className="navbar-logo" />
 				</div>
 				<ul className="navbar-nav">
 					{navItems.map((item) => (
@@ -33,6 +32,15 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
 						</li>
 					))}
 				</ul>
+				<div className="navbar-cta">
+					<button
+						className={`donaciones-btn ${currentPage === 'donaciones' ? 'active' : ''}`}
+						onClick={() => onNavigate('donaciones')}
+					>
+						Donaciones
+						<span className="heart-icon">♥</span>
+					</button>
+				</div>
 			</div>
 		</nav>
 	)

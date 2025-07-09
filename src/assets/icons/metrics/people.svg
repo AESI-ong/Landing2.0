@@ -1,7 +1,6 @@
 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- People Icon -->
-  <circle cx="6" cy="4" r="2" stroke="currentColor" strokeWidth="2"/>
-  <circle cx="12" cy="4" r="2" stroke="currentColor" strokeWidth="2"/>
-  <path d="M2 14V12C2 10.8954 2.89543 10 4 10H8C9.10457 10 10 10.8954 10 12V14" stroke="currentColor" strokeWidth="2"/>
-  <path d="M8 14V12C8 10.8954 8.89543 10 10 10H14C15.1046 10 16 10.8954 16 12V14" stroke="currentColor" strokeWidth="2"/>
-</svg> 
+<path d="M10.6576 14V12.6667C10.6576 11.9594 10.3766 11.2811 9.8765 10.781C9.37641 10.281 8.69813 10 7.99089 10H3.99089C3.28364 10 2.60536 10.281 2.10527 10.781C1.60517 11.2811 1.32422 11.9594 1.32422 12.6667V14" stroke="#1F2937" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.99089 7.33333C7.46364 7.33333 8.65755 6.13943 8.65755 4.66667C8.65755 3.19391 7.46364 2 5.99089 2C4.51813 2 3.32422 3.19391 3.32422 4.66667C3.32422 6.13943 4.51813 7.33333 5.99089 7.33333Z" stroke="#1F2937" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.6602 14V12.6667C14.6597 12.0758 14.4631 11.5019 14.1011 11.0349C13.7391 10.5679 13.2322 10.2344 12.6602 10.0867" stroke="#1F2937" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.6602 2.08667C11.2338 2.23354 11.7422 2.56714 12.1052 3.03488C12.4683 3.50262 12.6654 4.07789 12.6654 4.67C12.6654 5.26212 12.4683 5.83739 12.1052 6.30513C11.7422 6.77287 11.2338 7.10647 10.6602 7.25334" stroke="#1F2937" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

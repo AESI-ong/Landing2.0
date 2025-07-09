@@ -50,8 +50,8 @@
 	position: absolute;
 	bottom: 1rem;
 	right: 1rem;
-	background: rgba(0, 0, 0, 0.8);
-	color: white;
+	background: #ffffff;
+	color: #000000;
 	padding: 0.5rem 1rem;
 	border-radius: 20px;
 	font-size: 0.875rem;
@@ -61,6 +61,7 @@
 /* === Content section === */
 .program-card__content {
 	padding: 1.5rem;
+	
 }
 
 .program-card__title {
@@ -74,6 +75,7 @@
 	color: #6b7280;
 	line-height: 1.6;
 	margin-bottom: 1.5rem;
+	text-align: left;
 }
 
 /* === Metrics section === */
@@ -102,11 +104,11 @@
 	color: #6b7280;
 	font-size: 0.875rem;
 }
-
 /* === Details button === */
 .program-card__details-btn {
 	display: inline-flex;
 	align-items: center;
+	justify-content: center;
 	gap: 0.5rem;
 	background: none;
 	border: 2px solid #e5e7eb;
@@ -116,6 +118,7 @@
 	font-weight: 600;
 	cursor: pointer;
 	transition: all 0.3s ease;
+	width: 100%;
 }
 
 .program-card__details-btn:hover {
