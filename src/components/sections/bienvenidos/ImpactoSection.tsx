@@ -8,25 +8,25 @@ export function ImpactoSection() {
       icon: Users,
       number: '500+',
       description: 'Familias Beneficiadas',
-      bgColor: '#ce2828'
+      bgColor: '#CD2027'
     },
     {
       icon: Home,
       number: '12',
       description: 'Comunidades Activas',
-      bgColor: '#facc15'
+      bgColor: '#F6D70E'
     },
     {
       icon: GraduationCap,
       number: '1,200',
       description: 'Niños Educados',
-      bgColor: '#2f68bb'
+      bgColor: '#2C6DB6'
     },
     {
       icon: Handshake,
       number: '25',
       description: 'Aliados Estratégicos',
-      bgColor: '#22c55e'
+      bgColor: '#55B948'
     }
   ];
 

@@ -15,22 +15,24 @@
 }
 
 .impacto-header h2 {
-  color: #1f2937;
+  color: #1F2937;
   margin-bottom: 1rem;
+  font-size: 40px;
 }
 
 .impacto-subrayado {
   width: 12rem;
   height: 6px;
-  background-image: linear-gradient(to right, #2f68bb, #43aef5);
+  background-image: linear-gradient(to right, #CD2027, #FF7076);
   margin: 0 auto 1.5rem;
   border-radius: 1rem;
 }
 
 .impacto-header p {
-  color: #4b5563;
-  max-width: 700px;
+  color: #4B5563;
+  max-width: 65rem;
   margin: 0 auto;
+  font-size: 24px;
 }
 
 /* === Grid adaptable === */
@@ -77,5 +79,6 @@
 
 /* Descripción */
 .impacto-texto {
-  color: #4b5563;
+  color: #4B5563;
+  font-size: 16px;
 }

@@ -8,7 +8,7 @@ export function DonacionesSection() {
       icon: Banknote,
       title: 'Transferencia Bancaria',
       description: 'Transferencia directa a nuestras cuentas bancarias oficiales',
-      bgColor: '#ce2828',
+      bgColor: '#CD2027',
       detalles: [
         'Banco de Crédito del Perú (BCP)',
         'Cuenta Corriente Soles: 194-123456789-0-12',
@@ -22,7 +22,7 @@ export function DonacionesSection() {
       icon: Building2,
       title: 'Depósito en Ventanilla',
       description: 'Depósito directo en cualquier agencia bancaria del país',
-      bgColor: '#facc15',
+      bgColor: '#F6D70E',
       detalles: [
         'Banco de Crédito del Perú (BCP)', 
         'Interbank', 
@@ -36,7 +36,7 @@ export function DonacionesSection() {
       icon: FileText,
       title: 'Cheque',
       description: (<><span className='texto-oscuro'>Cheque a nombre de AESI</span> entregado en nuestras oficinas</>),
-      bgColor: '#2f68bb',
+      bgColor: '#2C6DB6',
       detalles: [
         'A nombre de: Asociación Educativa y Social Integral - AESI',
         'Entregar en oficina principal',
@@ -49,7 +49,7 @@ export function DonacionesSection() {
       icon: Gift,
       title: 'Donación en Especie',
       description: 'Bienes, equipos, materiales o servicios que apoyen nuestros programas',
-      bgColor: '#22c55e',
+      bgColor: '#55B948',
       detalles: [
         'Equipos médicos y educativos',
         'Materiales de construcción',
