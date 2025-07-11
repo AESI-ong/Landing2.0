@@ -5,6 +5,7 @@ import {DonacionesSection} from '../sections/bienvenidos/DonacionesSection'
 import {LideresSection} from '../sections/bienvenidos/LideresSection'
 import { PodcastSection } from '../sections/bienvenidos/PodcastSection'
 import {AliadosSection} from '../sections/bienvenidos/AliadosSection'
+import {RealizarDonacionSection} from '../sections/bienvenidos/RealizarDonacionSection'
 
 export function Bienvenidos() {
 	const handleHeroCta = (action: string) => {
@@ -31,6 +32,8 @@ export function Bienvenidos() {
 			<LideresSection />
 			<PodcastSection />
 			<AliadosSection />
+			<RealizarDonacionSection />
+			{/* Aquí puedes agregar más secciones según sea necesario */}
 		</main>
 	)
 } 
