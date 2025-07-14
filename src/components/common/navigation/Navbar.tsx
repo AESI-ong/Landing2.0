@@ -7,11 +7,11 @@ import { Logo } from '../Logo'
 
 export function Navbar({ currentPage, onNavigate }: NavbarProps) {
 	const navItems = [
-		{ key: 'bienvenidos', label: 'Bienvenidos' },
-		{ key: 'quienes-somos', label: '¿Quiénes somos?' },
-		{ key: 'que-hacemos', label: '¿Qué hacemos?' },
-		{ key: 'bolsa-laboral', label: 'Bolsa Laboral Inclusiva' },
-		{ key: 'mercado-inclusivo', label: 'Mercado Inclusivo' },
+		{ key: 'bienvenidos', label: 'Bienvenidos', colorClass: 'nav-azul' },
+		{ key: 'quienes-somos', label: '¿Quiénes somos?', colorClass: 'nav-azul' },
+		{ key: 'que-hacemos', label: '¿Qué hacemos?', colorClass: 'nav-azul' },
+		{ key: 'bolsa-laboral', label: 'Bolsa Laboral Inclusiva', colorClass: 'nav-verde' },
+		{ key: 'mercado-inclusivo', label: 'Mercado Inclusivo', colorClass: 'nav-amarillo' },
 	]
 
 	return (
@@ -24,7 +24,7 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
 					{navItems.map((item) => (
 						<li key={item.key}>
 							<button
-								className={`nav-link ${currentPage === item.key ? 'active' : ''}`}
+								className={`nav-link nav-pill ${item.colorClass} ${currentPage === item.key ? 'active' : ''}`}
 								onClick={() => onNavigate(item.key)}
 							>
 								{item.label}
@@ -34,7 +34,7 @@ export function Navbar({ currentPage, onNavigate }: NavbarProps) {
 				</ul>
 				<div className="navbar-cta">
 					<button
-						className={`donaciones-btn ${currentPage === 'donaciones' ? 'active' : ''}`}
+						className={`donaciones-btn nav-pill ${currentPage === 'donaciones' ? 'active' : ''}`}
 						onClick={() => onNavigate('donaciones')}
 					>
 						Donaciones

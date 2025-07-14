@@ -3,6 +3,7 @@ import { ImpactoSection } from '../sections/bienvenidos/ImpactoSection'
 import { ProgramasSection } from '../sections/bienvenidos/ProgramasSection'
 import {DonacionesSection} from '../sections/bienvenidos/DonacionesSection'
 import {LideresSection} from '../sections/bienvenidos/LideresSection'
+import { LiderarSection } from '../sections/bienvenidos/LiderarSection'
 import { PodcastSection } from '../sections/bienvenidos/PodcastSection'
 import {AliadosSection} from '../sections/bienvenidos/AliadosSection'
 import {RealizarDonacionSection} from '../sections/bienvenidos/RealizarDonacionSection'
@@ -31,13 +32,11 @@ export function Bienvenidos() {
 			<ProgramasSection />
 			<DonacionesSection />
 			<LideresSection />
+			<LiderarSection />
 			<PodcastSection />
 			<AliadosSection />
 			<RealizarDonacionSection />
 			<ContactSection />
-			{/* Puedes agregar más secciones aquí según sea necesario */}
-			{/* Ejemplo: <OtraSeccion /> */}
-			{/* Aquí puedes agregar más secciones según sea necesario */}
 		</main>
 	)
 } 
