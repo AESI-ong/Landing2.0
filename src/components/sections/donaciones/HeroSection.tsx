@@ -1,7 +1,7 @@
 import React from 'react';
 import './HeroSection.css';
 import { Info } from 'lucide-react';
-import infoDonacion from '../../../assets/images/donacionSection/infoDonaciones.jpg';
+import infoDonacion from '../../../assets/images/donaciones/infoDonaciones.jpg';
 
 interface DonationInfoProps { }
 

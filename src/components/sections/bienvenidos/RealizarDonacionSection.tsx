@@ -1,5 +1,5 @@
 import './RealizarDonacion.css';
-import bannerDonacion from '../../../assets/images/donacionSection/banner-donacion.png';
+import bannerDonacion from '../../../assets/images/donaciones/banner-donacion.png';
 import { ExternalLink, Heart } from 'lucide-react';
 
 export function RealizarDonacionSection() {
