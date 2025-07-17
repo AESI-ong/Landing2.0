@@ -1,10 +1,11 @@
+// Importa la sección visual de información de donación
+import  InfoDonacionSection  from '../sections/donaciones/HeroSection'
+
 export function Donaciones() {
 	return (
 		<main className="page">
-			<div className="container">
-				<h1>Métodos de Donación</h1>
-				<p>Placeholder para métodos de donación</p>
-			</div>
+			{/* Sección visual sin lógica */}
+			<InfoDonacionSection />
 		</main>
 	)
 }

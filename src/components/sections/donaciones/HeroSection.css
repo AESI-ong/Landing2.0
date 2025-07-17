@@ -1,0 +1,193 @@
+.donation-info {
+  width: 100%;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.donation-section {
+  position: relative;
+  height: 100vh; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 5%; 
+  color: white;
+  overflow: visible;
+}
+
+.donation-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, 
+    rgba(0, 0, 0, 1) 0%,       /* Abajo - más oscuro */
+    rgba(0, 0, 0, 0.6) 10%,   /* Medio - un poco más claro */
+    rgba(0, 0, 0, 0) 100%); /* Arriba - más claro */
+
+  z-index: 1;
+}
+
+.donation-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.donation-title {
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.donation-highlight {
+  color: #CD2027;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.donation-description {
+  font-size: clamp(1.1rem, 2.5vw, 1.4rem);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+}
+
+.features-section {
+  position: absolute; /* Para posicionarlo sobre la imagen */
+  bottom: 60px; /* Distancia desde la parte inferior de la imagen */
+  left: 38%; /* Centramos horizontalmente */
+  transform: translateX(-50%); /* Ajustamos para centrar realmente */
+
+  display: flex; /* Distribuye los cards en fila */
+  flex-direction: row; /* Asegura que estén en horizontal (por defecto en `flex`, pero mejor declararlo) */
+  flex-wrap: nowrap; /* Evita que salten a una nueva línea (si caben) */
+  gap: 1rem; /* Espacio horizontal entre cards */
+
+  z-index: 3; /* Para asegurarnos de que estén encima de la imagen */
+  padding: 0 1rem; /* Espaciado lateral opcional */
+}
+
+.feature-card {
+  width: 405.33px; /* Ancho del card: lo reduje para hacerlo más pequeño (ajústalo según necesites) */
+  height: 124px; /* Alto del card: también reducido para que se vea más compacto */
+  
+  background-color: #CD2027; /* Fondo degradado rojo oscuro */
+  color: white; /* Color del texto dentro del card */
+
+  padding: 1.5rem; /* Espacio interno (padding) reducido para tamaño compacto */
+  text-align: center; /* Centra el texto horizontalmente */
+
+  border-radius: 12px; /* Bordes redondeados para un diseño más moderno */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra sutil para que "flote" ligeramente */
+
+  display: flex; /* Usa flexbox para alinear contenido dentro del card */
+  flex-direction: column; /* Acomoda el contenido de arriba hacia abajo (verticalmente) */
+  justify-content: center; /* Centra el contenido verticalmente */
+  align-items: center; /* Centra el contenido horizontalmente */
+
+  position: relative; /* Necesario para manejar pseudoelementos como ::before */
+}
+
+.feature-icon svg {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.feature-description {
+  font-size: 1.30rem;
+  opacity: 0.9;
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .donation-section {
+    padding: 0 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .donation-title {
+    font-size: 2.5rem;
+  }
+
+  .donation-description {
+    font-size: 1.1rem;
+  }
+
+  .features-section {
+    position: static; /* Cambia de absolute a static */
+    left: auto;
+    transform: none;
+    bottom: auto;
+    flex-direction: column; /* Cambia a vertical */
+    align-items: center;
+    margin-top: 2rem;
+    padding: 0 20px;
+  }
+
+  .feature-card {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    min-height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .donation-title {
+    font-size: 2rem;
+  }
+
+  .donation-description {
+    font-size: 1rem;
+  }
+
+  .feature-card {
+    padding: 1.5rem;
+    max-width: 350px;
+  }
+  
+  .feature-title {
+    font-size: 1.1rem;
+  }
+  
+  .feature-description {
+    font-size: 0.9rem;
+  }
+}
