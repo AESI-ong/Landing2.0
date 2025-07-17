@@ -1,12 +1,10 @@
 import { useState } from 'react'
 import { Navbar } from './components/common/navigation/Navbar'
 import { Footer } from './components/common/navigation/Footer'
-import { Bienvenidos } from './components/pages/Bienvenidos'
-import { QuienesSomos } from './components/pages/QuienesSomos'
-import { Programas } from './components/pages/Programas'
-import { Aliados } from './components/pages/Aliados'
-import { Contacto } from './components/pages/Contacto'
-import { Donaciones } from './components/pages/Donaciones'
+import { Bienvenidos } from './components/pages/bienvenidos'
+import { QuienesSomos } from './components/pages/quienes-somos'
+import { QueHacemos } from './components/pages/que-hacemos'
+import { Donaciones } from './components/pages/donaciones'
 import './index.css'
 
 export function App() {
@@ -19,13 +17,17 @@ export function App() {
 			case 'quienes-somos':
 				return <QuienesSomos />
 			case 'que-hacemos':
-				return <Programas />
-			case 'bolsa-laboral':
-				return <Aliados />
-			case 'mercado-inclusivo':
-				return <Contacto />
+				return <QueHacemos />
 			case 'donaciones':
 				return <Donaciones />
+			case 'bolsa-laboral':
+				// This will eventually open a new page
+				window.open('https://www.linkedin.com/company/aesi-bolsa-laboral-inclusiva/', '_blank')
+				return <Bienvenidos /> // or a placeholder
+			case 'mercado-inclusivo':
+				// This will also eventually open a new page
+				window.open('https://www.instagram.com/aesi_desarrollo/', '_blank')
+				return <Bienvenidos /> // or a placeholder
 			default:
 				return <Bienvenidos />
 		}

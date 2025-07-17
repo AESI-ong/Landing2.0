@@ -10,12 +10,10 @@ export { Navbar } from './common/navigation/Navbar'
 export { Footer } from './common/navigation/Footer'
 
 // Page components
-export { Bienvenidos } from './pages/Bienvenidos'
-export { QuienesSomos } from './pages/QuienesSomos'
-export { Programas } from './pages/Programas'
-export { Aliados } from './pages/Aliados'
-export { Contacto } from './pages/Contacto'
-export { Donaciones } from './pages/Donaciones'
+export { Bienvenidos } from './pages/bienvenidos'
+export { QuienesSomos } from './pages/quienes-somos'
+export { QueHacemos } from './pages/que-hacemos'
+export { Donaciones } from './pages/donaciones'
 
 // Section components
 export { ImpactoSection } from './sections/bienvenidos/ImpactoSection'
@@ -23,4 +21,5 @@ export { ProgramasSection } from './sections/bienvenidos/ProgramasSection'
 export { HeroSection } from './sections/bienvenidos/HeroSection'
 export { HeroCarousel } from './sections/bienvenidos/HeroCarousel'
 export { PodcastSection } from './sections/bienvenidos/PodcastSection'
-export { LiderarSection } from './sections/bienvenidos/LiderarSection' 
+export { LiderarSection } from './sections/bienvenidos/LiderarSection'
+export { HeroSection as QueHacemosHeroSection } from './sections/que-hacemos/HeroSection' 
