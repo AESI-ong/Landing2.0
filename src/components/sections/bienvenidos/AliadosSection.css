@@ -99,12 +99,6 @@
   min-height: 100px;
 }
 
-.aliado-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-  /* border-color: #3498db; */
-}
-
 .aliado-logo {
   width: 100px;
   height: 60px;

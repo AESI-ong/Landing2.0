@@ -1,10 +1,8 @@
-/* TiposDonantes.css mejorado */
-
-.tipos-donantes-container {
+/* BeneficiosTributarios.css */
+.beneficios-tributarios-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 90px 20px 40px 20px;
-  min-height: 100vh;
+  padding: 40px 20px;
 }
 
 .header {
@@ -16,14 +14,14 @@
   color: #1F2937;
   font-size: 40px;
   font-weight: 700;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
   letter-spacing: -0.025em;
 }
 
-.header-subrayado {
+.underline {
   width: 12rem;
   height: 6px;
-  background-color: #CD2027;
+  background-color: #55B948;
   margin: 0 auto 1.5rem;
   border-radius: 1rem;
 }
@@ -36,14 +34,14 @@
   line-height: 1.6;
 }
 
-.donantes-grid {
+.beneficios-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: 30px;
   margin-top: 40px;
 }
 
-.donante-card {
+.beneficio-card {
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -55,13 +53,9 @@
   display: flex;
   align-items: center;
   padding: 24px;
+  background-color: #55B948;
   color: white;
   gap: 16px;
-}
-
-.donante-card.natural .card-header,
-.donante-card.juridica .card-header {
-  background-color: #CD2027;
 }
 
 .icon {
@@ -71,46 +65,24 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px;
   color: #FFFFFF;
 }
 
 .card-title h2 {
   margin: 0 0 8px 0;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 600;
 }
 
 .card-title p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 16px;
   opacity: 0.9;
   line-height: 1.5;
 }
 
 .card-content {
   padding: 24px;
-}
-
-.beneficios-section,
-.requisitos-section {
-  margin-bottom: 28px;
-}
-
-.beneficios-section:last-child,
-.requisitos-section:last-child {
-  margin-bottom: 0;
-}
-
-.beneficios-section h3,
-.requisitos-section h3 {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 0 0 16px 0;
-  font-size: 1.125rem;
-  font-weight: 700;
-  color: #1F2937;
 }
 
 .beneficios-list {
@@ -126,65 +98,63 @@
   padding: 8px 0;
   color: #4a5568;
   line-height: 1.5;
-  font-size: 0.95rem;
+  font-size: 16px;
 }
 
 .beneficios-list li svg {
   margin-top: 2px;
   flex-shrink: 0;
-  color: #CD2027;
+  color: #22c55e;
 }
 
-.requisitos-section ul {
-  list-style: none;
-  padding: 0;
+.ejemplo-container {
+  background-color: #82E075;
+  border-radius: 12px;
+  padding: 16px;
+  margin-top: 20px;
+}
+
+.ejemplo-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #1F2937;
+  font-size: 16px;
+}
+
+.ejemplo-header svg {
+  flex-shrink: 0;
+  color: #15803d;
+}
+
+.ejemplo-container p {
   margin: 0;
-}
-
-.requisitos-section li {
-  position: relative;
-  padding: 8px 0 8px 24px;
-  color: #4a5568;
-  line-height: 1.2;
-  font-size: 0.95rem;
-}
-
-.requisitos-section li::before {
-  content: '';
-  position: absolute;
-  left: 8px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 6px;
-  height: 6px;
-  background-color: #4B5563;
-  border-radius: 50%;
-} 
-
-.beneficios-section li:last-child,
-.requisitos-section li:last-child {
-  padding-bottom: 0;
+  color: #1F2937;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-  .tipos-donantes-container {
+  .beneficios-tributarios-container {
     padding: 20px 16px;
   }
-
+  
   .header h1 {
     font-size: 2rem;
   }
-
-  .donantes-grid {
+  
+  .beneficios-grid {
     grid-template-columns: 1fr;
     gap: 20px;
   }
-
+  
   .card-header {
     padding: 20px;
   }
-
+  
   .card-content {
     padding: 20px;
   }
@@ -195,16 +165,16 @@
     flex-direction: column;
     text-align: center;
   }
-
+  
   .card-title h2 {
     font-size: 1.25rem;
   }
-
+  
   .header h1 {
     font-size: 1.75rem;
   }
-
-  .donantes-grid {
+  
+  .beneficios-grid {
     grid-template-columns: 1fr;
   }
 }
