@@ -106,10 +106,10 @@ const TiposDonantes: React.FC = () => {
                                     </svg>
                                     Beneficios
                                 </h3>
-                                <ul>
+                                <ul className='beneficios-list'>
                                     {donante.beneficios.map((beneficio, idx) => (
-                                        <li key={idx} className="beneficio-item">
-                                            <span className="beneficio-icon">
+                                        <li key={idx}>
+                                            <span>
                                                 {/* Ícono SVG personalizado */}
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                                                     <g clipPath="url(#clip0_2389_6628)">

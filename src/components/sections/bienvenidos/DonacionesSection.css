@@ -68,10 +68,6 @@
   margin: 0 auto; /* para centrar los cards cuando no llenan toda la fila */
 }
 
-.donaciones-card:hover {
-  transform: translateY(-4px);
-}
-
 /* Icono principal */
 .icon-box {
   width: 3.5rem;

@@ -1,0 +1,169 @@
+/* NivelesImpacto.css */
+.niveles-impacto-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.niveles-impacto-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.niveles-impacto-header h1 {
+  color: #1F2937;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  letter-spacing: -0.025em;
+}
+
+.niveles-impacto-underline {
+  width: 12rem;
+  height: 6px;
+  background-image: linear-gradient(to right, #2C6DB6, #4BA0FF);
+  margin: 0 auto 1.5rem;
+  border-radius: 1rem;
+}
+
+.niveles-impacto-header p {
+  color: #4B5563;
+  font-size: 24px;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.niveles-impacto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(245px, 231px));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.niveles-impacto-card {
+  background: white;
+  border-radius: 16px;
+  padding: 32px 24px;
+  text-align: center;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.niveles-impacto-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #2C6DB6;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px auto;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.niveles-impacto-content {
+  position: relative;
+  z-index: 1;
+}
+
+.niveles-impacto-monto {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.025em;
+}
+
+.niveles-impacto-titulo {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1F2937;
+  margin: 0 0 16px 0;
+}
+
+.niveles-impacto-descripcion {
+  color: #1F2937;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 0 24px 0;
+  min-height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.niveles-impacto-badge {
+  display: flex;
+  background-color: #4BA0FF;
+  color: #1F2937;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+} 
+
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .niveles-impacto-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .niveles-impacto-container {
+    padding: 30px 16px;
+  }
+  
+  .niveles-impacto-header h1 {
+    font-size: 2rem;
+  }
+  
+  .niveles-impacto-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .niveles-impacto-card {
+    padding: 24px 20px;
+  }
+  
+  .niveles-impacto-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+  }
+  
+  .niveles-impacto-monto {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .niveles-impacto-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .niveles-impacto-header h1 {
+    font-size: 1.75rem;
+  }
+  
+  .niveles-impacto-card {
+    padding: 20px 16px;
+  }
+  
+  .niveles-impacto-monto {
+    font-size: 1.5rem;
+  }
+  
+  .niveles-impacto-titulo {
+    font-size: 1.1rem;
+  }
+}
