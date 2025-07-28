@@ -1,7 +1,6 @@
 import "./HeroSection.css";
 
 import React from "react";
-import { Users } from "lucide-react";
 import hero from "../../../assets/images/quienes-somos/hero.png";
 
 export const HeroSection: React.FC = () => {
