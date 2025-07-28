@@ -1,0 +1,139 @@
+.quienes-somos-info {
+  width: 100%;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.quienes-somos-section {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 0 5%; 
+  color: white;
+  overflow: visible;
+}
+
+.quienes-somos-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, 
+    rgba(0, 0, 0, 0.8) 0%,     /* Abajo - más oscuro */
+    rgba(0, 0, 0, 0.4) 50%,    /* Medio */
+    rgba(0, 0, 0, 0.2) 100%);  /* Arriba - más claro */
+  z-index: 1;
+}
+
+.quienes-somos-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1400px;
+  margin-bottom: 10%;
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.quienes-somos-title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.quienes-somos-description-box {
+  background-color: var(--azul-aesi);
+  background: linear-gradient(135deg, var(--azul-aesi) 0%, #1e56a0 100%);
+  color: white;
+  padding: 1.5rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 25px rgba(44, 109, 182, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-width: 600px;
+}
+
+.quienes-somos-description {
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .quienes-somos-section {
+    padding: 0 20px;
+    text-align: center;
+    justify-content: center;
+    align-items: flex-end;
+    padding-top: 15vh;
+  }
+
+  .quienes-somos-content {
+    margin-bottom: 30%;
+  }
+
+  .quienes-somos-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .quienes-somos-description-box {
+    padding: 1.5rem 2rem;
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  .quienes-somos-description {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .quienes-somos-section {
+    padding: 0 15px;
+    padding-top: 20vh;
+  }
+
+  .quienes-somos-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .quienes-somos-description-box {
+    padding: 1.25rem 1.5rem;
+    border-radius: 12px;
+  }
+
+  .quienes-somos-description {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .info-title {
+    font-size: 0.8rem;
+  }
+  
+  .info-text {
+    font-size: 0.7rem;
+  }
+}
