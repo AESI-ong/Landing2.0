@@ -1,5 +1,3 @@
-import "./index.css";
-
 import { Bienvenidos } from "./components/pages/bienvenidos";
 import { Donaciones } from "./components/pages/donaciones";
 import { Footer } from "./components/common/navigation/Footer";
@@ -33,7 +31,7 @@ export function App() {
   };
 
   return (
-    <div className="app">
+    <div>
       <Navbar currentPage={currentPage} onNavigate={setCurrentPage} />
       {renderPage()}
       <Footer />

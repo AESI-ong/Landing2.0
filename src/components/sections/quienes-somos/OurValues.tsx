@@ -1,4 +1,11 @@
-import { Brain, ChevronLeft, ChevronRight, Heart, Target, Zap } from "lucide-react";
+import {
+  Brain,
+  ChevronLeft,
+  ChevronRight,
+  Heart,
+  Target,
+  Zap,
+} from "lucide-react";
 import React, { useCallback, useEffect, useState } from "react";
 
 import useEmblaCarousel from "embla-carousel-react";
@@ -89,29 +96,31 @@ export const OurValues: React.FC = () => {
           {/* Contenedor solo para móvil/tablet que incluye botones */}
           <div className="embla" ref={emblaRef}>
             <div className="embla__container">
-              {values.map((value, index) => (
-                <div className="embla__slide p-3" key={index}>
-                  {/* Reutilizamos el diseño de la tarjeta, pero ajustamos la sombra y el padding */}
-                  <div className="bg-white rounded-xl shadow-md h-full p-8 flex flex-col text-center">
-                    <div
-                      className={`w-16 h-16 ${
-                        iconStyles[value.styleKey]
-                      } rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl`}
-                    >
-                      <value.icon size={28} className="text-white" />
+              {values.map((value, index) => {
+                const iconBgClass = iconStyles[value.styleKey] || "bg-gray-200";
+
+                return (
+                  <div className="embla__slide p-3" key={index}>
+                    {/* Reutilizamos el diseño de la tarjeta, pero ajustamos la sombra y el padding */}
+                    <div className="bg-white rounded-xl shadow-md h-full p-8 flex flex-col text-center">
+                      <div
+                        className={`w-16 h-16 ${iconBgClass} rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl`}
+                      >
+                        <value.icon size={28} className="text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold text-gray-800 mb-1">
+                        {value.title}
+                      </h3>
+                      <p className="text-xl font-bold text-gray-800 opacity-90 mb-4">
+                        {value.subtitle}
+                      </p>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {value.description}
+                      </p>
                     </div>
-                    <h3 className="text-xl font-bold text-gray-800 mb-1">
-                      {value.title}
-                    </h3>
-                    <p className="text-xl font-bold text-gray-800 opacity-90 mb-4">
-                      {value.subtitle}
-                    </p>
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {value.description}
-                    </p>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
           {/* Botones de Navegación del Carrusel */}
