@@ -1,9 +1,9 @@
-import { Bienvenidos } from "./components/pages/bienvenidos";
-import { Donaciones } from "./components/pages/donaciones";
+import { Bienvenidos } from "./components/pages/Bienvenidos";
+import { Donaciones } from "./components/pages/Donaciones";
 import { Footer } from "./components/common/navigation/Footer";
 import { Navbar } from "./components/common/navigation/Navbar";
-import { QueHacemos } from "./components/pages/que-hacemos";
-import { QuienesSomos } from "./components/pages/quienes-somos";
+import { QueHacemos } from "./components/pages/QueHacemos";
+import { QuienesSomos } from "./components/pages/QuienesSomos";
 import { useState } from "react";
 
 export function App() {

@@ -10,10 +10,10 @@ export { Navbar } from './common/navigation/Navbar'
 export { Footer } from './common/navigation/Footer'
 
 // Page components
-export { Bienvenidos } from './pages/bienvenidos'
-export { QuienesSomos } from './pages/quienes-somos'
-export { QueHacemos } from './pages/que-hacemos'
-export { Donaciones } from './pages/donaciones'
+export { Bienvenidos } from './pages/Bienvenidos'
+export { QuienesSomos } from './pages/QuienesSomos'
+export { QueHacemos } from './pages/QueHacemos'
+export { Donaciones } from './pages/Donaciones'
 
 // Section components
 export { ImpactoSection } from './sections/bienvenidos/ImpactoSection'
