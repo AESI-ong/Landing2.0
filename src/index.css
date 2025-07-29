@@ -1,6 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800;900&display=swap");
 
-@import "../tailwind.config.css";
+@import "tailwindcss";
 
+@theme {
+  --font-sans: "M PLUS Rounded 1c", Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+
+  /* AESI Brand Colors */
+  --color-amarillo-aesi: #f6d70e;
+  --color-rojo-aesi: #cd2027;
+  --color-azul-aesi: #2c6db6;
+  --color-verde-aesi: #55b948;
+}
+
+@layer base {
+  :root,
+  :host {
+    color-scheme: light dark;
+    color: #333;
+    background-color: #ffffff;
+    font-family: "M PLUS Rounded 1c", Arial, sans-serif;
+
+    /* AESI Brand Colors as CSS variables for non-Tailwind usage */
+    --amarillo-aesi: #f6d70e;
+    --rojo-aesi: #cd2027;
+    --azul-aesi: #2c6db6;
+    --verde-aesi: #55b948;
+  }
+}
+
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%; /* Cada slide ocupa el 100% del contenedor */
+  min-width: 0;
+}
 
 /* Navbar Styles */
 .navbar {

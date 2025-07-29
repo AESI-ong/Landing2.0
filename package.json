@@ -6,14 +6,16 @@
   "main": "src/index.tsx",
   "module": "src/index.tsx",
   "scripts": {
-    "dev": "bun --hot src/index.tsx",
+    "dev": "npm-run-all --parallel dev:app dev:css",
+    "dev:app": "bun --hot src/index.tsx",
     "dev:css": "tailwindcss --input ./src/index.css --output ./src/output.css --watch",
     "build:css": "tailwindcss --input ./src/index.css --output ./src/output.css --minify",
-    "build": "bun run build:css && bun build ./src/index.html --outdir=dist --sourcemap --target=browser --minify --define:process.env.NODE_ENV='\"production\"' --env='BUN_PUBLIC_*'",
+    "build": "bun run build:css && bun build ./src/index.html --outdir=dist",
     "start": "NODE_ENV=production bun src/index.tsx"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.34",
+    "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.525.0",
     "react": "^19",
     "react-dom": "^19",
@@ -25,6 +27,8 @@
     "@types/bun": "latest",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "npm-run-all": "^4.1.5",
+    "rxjs": "^7.8.2",
     "tailwindcss": "^4.1.11"
   }
 }
