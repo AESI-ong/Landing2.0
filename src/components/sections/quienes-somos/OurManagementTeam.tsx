@@ -1,8 +1,8 @@
 import React from "react";
-import team1 from "../../../assets/images/quienes-somos/team1.jpg";
-import team2 from "../../../assets/images/quienes-somos/team2.jpg";
-import team3 from "../../../assets/images/quienes-somos/team3.jpg";
-import team4 from "../../../assets/images/quienes-somos/team4.jpg";
+import team1 from "../../../assets/images/quienes-somos/team1.png";
+import team2 from "../../../assets/images/quienes-somos/team2.jpeg";
+import team3 from "../../../assets/images/quienes-somos/team3.png";
+import team4 from "../../../assets/images/quienes-somos/team4.png";
 
 export const OurManagementTeam: React.FC = () => {
   const teamMembers = [

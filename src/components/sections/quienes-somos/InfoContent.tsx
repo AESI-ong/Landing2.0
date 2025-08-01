@@ -67,9 +67,9 @@ export const InfoContent: React.FC = () => {
               <img
                 src={info}
                 alt="Equipo AESI trabajando juntos"
-                className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                className="w-full h-full object-contain transition-transform duration-300 hover:scale-105 px-12"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+              {/* <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
               <div className="absolute bottom-0 left-0 right-0 p-8 text-white">
                 <h4 className="text-xl lg:text-2xl font-bold mb-1">
                   Trabajando juntos
@@ -77,7 +77,7 @@ export const InfoContent: React.FC = () => {
                 <p className="text-base font-light m-0 opacity-90">
                   Por un futuro mejor para todos
                 </p>
-              </div>
+              </div> */}
             </div>
 
             {/* Botón flotante */}
@@ -86,11 +86,13 @@ export const InfoContent: React.FC = () => {
               className="bg-white text-[var(--azul-aesi)] px-6 py-4 rounded-2xl text-center font-semibold shadow-xl leading-tight transition-transform hover:scale-105
                  w-11/12 mt-[-20px] relative z-10
                  lg:absolute lg:w-auto lg:mt-0
-                 lg:bottom-[-20px] lg:right-[-20px]"
+                 lg:bottom-[-20px] lg:right-[-20px] hidden"
             >
-              Transformamos
+              Calidad de vida y
               <br />
-              Vidas
+              sostenibilidad
+              <br />
+              para todos
             </a>
           </div>
         </div>

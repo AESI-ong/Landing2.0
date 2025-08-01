@@ -1,11 +1,11 @@
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import React, { useCallback, useEffect, useState } from "react";
 
-import institutionality1 from "../../../assets/images/quienes-somos/institutionality1.jpg";
-import institutionality2 from "../../../assets/images/quienes-somos/institutionality2.jpg";
-import institutionality3 from "../../../assets/images/quienes-somos/institutionality3.jpg";
-import institutionality4 from "../../../assets/images/quienes-somos/institutionality4.jpg";
-import institutionality5 from "../../../assets/images/quienes-somos/institutionality5.jpg";
+import institutionality1 from "../../../assets/images/quienes-somos/institutionality1.png";
+import institutionality2 from "../../../assets/images/quienes-somos/institutionality2.jpeg";
+import institutionality3 from "../../../assets/images/quienes-somos/institutionality3.jpeg";
+import institutionality4 from "../../../assets/images/quienes-somos/institutionality4.png";
+import institutionality5 from "../../../assets/images/quienes-somos/institutionality5.png";
 import useEmblaCarousel from "embla-carousel-react";
 
 export const OurInstitutionality: React.FC = () => {
@@ -94,7 +94,7 @@ export const OurInstitutionality: React.FC = () => {
                       <img
                         src={institution.image}
                         alt={institution.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain p-1"
                       />
                     </div>
 

@@ -1,4 +1,5 @@
-import { Heart } from "lucide-react";
+import { Heart, Users } from "lucide-react";
+
 import React from "react";
 import allyCorporative1 from "../../../assets/images/quienes-somos/ally-corporative1.jpg";
 import allyCorporative2 from "../../../assets/images/quienes-somos/ally-corporative2.jpg";
@@ -30,30 +31,24 @@ const allianceCategories = [
           "Consejo Nacional para la Integración de la Persona con Discapacidad",
         image: allyState1,
         category: "Estado",
+        category2: "Institución",
       },
       {
         id: 2,
-        name: "CONADIS",
-        description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
+        name: "EsSalud",
+        description: "Seguro Social de Salud",
         image: allyState2,
         category: "Estado",
+        category2: "Institución",
       },
       {
         id: 3,
-        name: "CONADIS",
+        name: "OMAPED",
         description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
+          "Oficina Municipal de Atención a la Persona con Discapacidad",
         image: allyState3,
         category: "Estado",
-      },
-      {
-        id: 4,
-        name: "CONADIS",
-        description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
-        image: allyState4,
-        category: "Estado",
+        category2: "Institución",
       },
     ],
   },
@@ -65,35 +60,29 @@ const allianceCategories = [
     items: [
       {
         id: 1,
-        name: "CONADIS",
+        name: "SOOM Personas & Organizaciones", 
         description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
+          "",
         image: allyCorporative1,
         category: "Corporativo",
+        category2: "Empresa",
       },
       {
         id: 2,
-        name: "CONADIS",
-        description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
+        name: "Catapulta",
+        description: "",
         image: allyCorporative2,
         category: "Corporativo",
+        category2: "Empresa",
       },
       {
         id: 3,
-        name: "CONADIS",
+        name: "Vargas Pareja Abogados & Consultores",
         description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
+          "",
         image: allyCorporative3,
         category: "Corporativo",
-      },
-      {
-        id: 4,
-        name: "CONADIS",
-        description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
-        image: allyCorporative4,
-        category: "Corporativo",
+        category2: "Empresa",
       },
     ],
   },
@@ -105,27 +94,30 @@ const allianceCategories = [
     items: [
       {
         id: 1,
-        name: "CONADIS",
+        name: "Universidad Privada del Norte",
         description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
+          "",
         image: allyEducational1,
         category: "Educativo",
+        category2: "Universidad",
       },
       {
         id: 2,
-        name: "CONADIS",
+        name: "Universidad Continental",
         description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
+          "",
         image: allyEducational2,
         category: "Educativo",
+        category2: "Universidad",
       },
       {
         id: 3,
-        name: "CONADIS",
+        name: "Instituto CIBERTEC",
         description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
+          "",
         image: allyEducational3,
         category: "Educativo",
+        category2: "Universidad",
       },
     ],
   },
@@ -137,36 +129,31 @@ const allianceCategories = [
     items: [
       {
         id: 1,
-        name: "CONADIS",
+        name: "Fundación OLI",
         description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
+          "",
         image: allyONG1,
         category: "Organización",
+        category2: "Sociedad",
       },
       {
         id: 2,
-        name: "CONADIS",
+        name: "PROA",
         description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
+          "",
         image: allyONG2,
         category: "Organización",
+        category2: "Sociedad",
       },
       {
         id: 3,
-        name: "CONADIS",
+        name: "Alianza PRO BONO Perú",
         description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
+          "",
         image: allyONG3,
         category: "Organización",
-      },
-      {
-        id: 4,
-        name: "CONADIS",
-        description:
-          "Consejo Nacional para la Integración de la Persona con Discapacidad",
-        image: allyONG4,
-        category: "Organización",
-      },
+        category2: "Sociedad",
+      },  
     ],
   },
 ];
@@ -235,7 +222,7 @@ export const OurAlliances: React.FC = () => {
                           {item.category}
                         </span>
                         <div className="flex items-center text-gray-400 text-xs">
-                          <Heart size={12} className="mr-1" />
+                          <Users size={12} className="mr-1" />
                           <span>Educación</span>
                         </div>
                       </div>
