@@ -15,7 +15,7 @@ export const InfoContent: React.FC = () => {
           <p className="text-lg text-gray-600 font-medium mb-16 relative">
             RUC N° 20612143642
             {/* Línea decorativa */}
-            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-48 h-1.5 bg-gradient-to-r from-[var(--azul-aesi)] to-[var(--verde-aesi)] rounded-2xl"></span>
+            <span className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-48 h-1.5 bg-gradient-to-r from-[var(--azul-aesi)] to-[#4BA0FF] rounded-2xl"></span>
           </p>
 
           <p className="text-xl text-gray-600 leading-relaxed max-w-4xl mx-auto">
@@ -86,7 +86,7 @@ export const InfoContent: React.FC = () => {
               className="bg-white text-[var(--azul-aesi)] px-6 py-4 rounded-2xl text-center font-semibold shadow-xl leading-tight transition-transform hover:scale-105
                  w-11/12 mt-[-20px] relative z-10
                  lg:absolute lg:w-auto lg:mt-0
-                 lg:bottom-[-20px] lg:right-[-20px] hidden"
+                 lg:bottom-[-20px] lg:right-[-20px] hidden lg:block"
             >
               Calidad de vida y
               <br />

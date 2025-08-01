@@ -34,10 +34,10 @@ export const CTA: React.FC<CTAProps> = ({ onNavigate }) => {
           <div className="absolute inset-0"></div>
 
           {/* Content Container with max-width */}
-          <div className="absolute inset-0 flex items-start justify-start">
+          <div className="absolute inset-0 flex items-end justify-center md:items-center md:justify-start text-center md:text-left">
             <div className="max-w-7xl mx-auto w-full px-4 md:px-6 lg:px-8">
               {/* CTA Button */}
-              <div className="pt-8 md:pt-12">
+              <div className="pb-8 md:pb-0 md:pt-12">
                 <button
                   onClick={handleDonationClick}
                   className="bg-white text-rojo-aesi px-6 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 inline-flex items-center space-x-2 font-semibold cursor-pointer"
