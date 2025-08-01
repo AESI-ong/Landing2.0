@@ -223,7 +223,9 @@ export const OurAlliances: React.FC = () => {
                         </span>
                         <div className="flex items-center text-gray-400 text-xs">
                           <Users size={12} className="mr-1" />
-                          <span>Educación</span>
+                          <span>
+                            {item.category2}
+                          </span>
                         </div>
                       </div>
                     </div>
