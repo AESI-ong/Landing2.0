@@ -1,7 +1,7 @@
 import "./HeroSection.css";
 
 import React from "react";
-import hero from "../../../assets/images/quienes-somos/hero.png";
+import hero from "../../../assets/images/quienes-somos/hero.jpeg";
 
 export const HeroSection: React.FC = () => {
   return (

@@ -12,7 +12,7 @@ export function App() {
   const renderPage = () => {
     switch (currentPage) {
       case "bienvenidos":
-        return <Bienvenidos />;
+        return <Bienvenidos onNavigate={setCurrentPage} />;
       case "quienes-somos":
         return <QuienesSomos onNavigate={setCurrentPage} />;
       case "que-hacemos":

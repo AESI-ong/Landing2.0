@@ -16,7 +16,7 @@ export { QueHacemos } from './pages/QueHacemos'
 export { Donaciones } from './pages/Donaciones'
 
 // Section components
-export { ImpactoSection } from './sections/bienvenidos/ImpactoSection'
+export { OurImpact } from './sections/bienvenidos/OurImpact'
 export { ProgramasSection } from './sections/bienvenidos/ProgramasSection'
 export { HeroSection } from './sections/bienvenidos/HeroSection'
 export { HeroCarousel } from './sections/bienvenidos/HeroCarousel'

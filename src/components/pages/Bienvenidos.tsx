@@ -1,42 +1,31 @@
-import { HeroSection } from '../sections/bienvenidos/HeroSection'
-import { ImpactoSection } from '../sections/bienvenidos/ImpactoSection'
-import { ProgramasSection } from '../sections/bienvenidos/ProgramasSection'
-import {DonacionesSection} from '../sections/bienvenidos/DonacionesSection'
-import {LideresSection} from '../sections/bienvenidos/LideresSection'
-import { LiderarSection } from '../sections/bienvenidos/LiderarSection'
-import { PodcastSection } from '../sections/bienvenidos/PodcastSection'
-import {AliadosSection} from '../sections/bienvenidos/AliadosSection'
-import {RealizarDonacionSection} from '../sections/bienvenidos/RealizarDonacionSection'
-import ContactSection from '../sections/bienvenidos/ContactSection'
+import { AliadosSection } from "../sections/bienvenidos/AliadosSection";
+import { CTA } from "../sections/quienes-somos/CTA";
+import { DonacionesSection } from "../sections/bienvenidos/DonacionesSection";
+import { HeroSection } from "../sections/bienvenidos/HeroSection";
+import { InfoContent } from "../sections/bienvenidos/InfoContent";
+import { LiderarSection } from "../sections/bienvenidos/LiderarSection";
+import { LideresSection } from "../sections/bienvenidos/LideresSection";
+import { OurImpact } from "../sections/bienvenidos/OurImpact";
+import { PodcastSection } from "../sections/bienvenidos/PodcastSection";
+import { ProgramasSection } from "../sections/bienvenidos/ProgramasSection";
 
-export function Bienvenidos() {
-	const handleHeroCta = (action: string) => {
-		console.log('Hero CTA clicked:', action)
-		// TODO: Implement navigation based on action
-		switch (action) {
-			case 'about':
-				// Navigate to "Quiénes somos" section
-				break
-			case 'volunteer':
-				// Navigate to volunteer section
-				break
-			default:
-				break
-		}
-	}
+interface QuienesSomosProps {
+  onNavigate?: (page: string) => void;
+}
 
-	return (
-		<main className="page">
-			<HeroSection onCtaClick={handleHeroCta} />
-			<ImpactoSection />
-			<ProgramasSection />
-			<DonacionesSection />
-			<LideresSection />
-			<LiderarSection />
-			<PodcastSection />
-			<AliadosSection />
-			<RealizarDonacionSection />
-			<ContactSection />
-		</main>
-	)
-} 
+export function Bienvenidos({ onNavigate }: QuienesSomosProps) {
+  return (
+    <main>
+      <HeroSection onNavigate={onNavigate} />
+      <InfoContent />
+      <OurImpact />
+      <ProgramasSection />
+      <DonacionesSection />
+      <LideresSection />
+      <LiderarSection />
+      <PodcastSection />
+      <AliadosSection />
+      <CTA onNavigate={onNavigate} />
+    </main>
+  );
+}
